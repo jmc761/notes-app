@@ -1,0 +1,38 @@
+import axios from 'axios';
+import { type Note } from '../types/types';
+
+const API_URL = 'http://localhost:3000/notes';
+
+export const getNotes = async (archived = false): Promise<Note[]> => {
+    const response = await axios.get(API_URL, { params: { archived } });
+    return response.data;
+};
+
+export const getNote = async (id: number): Promise<Note> => {
+    const response = await axios.get(`${API_URL}/${id}`);
+    return response.data;
+};
+
+export const createNote = async (title: string, content: string, tags: string[] = []): Promise<Note> => {
+    const response = await axios.post(API_URL, { title, content, tags });
+    return response.data;
+};
+
+export const updateNote = async (id: number, data: any): Promise<Note> => {
+    const response = await axios.patch(`${API_URL}/${id}`, data);
+    return response.data;
+};
+
+export const deleteNote = async (id: number): Promise<void> => {
+    await axios.delete(`${API_URL}/${id}`);
+};
+
+export const archiveNote = async (id: number): Promise<Note> => {
+    const response = await axios.patch(`${API_URL}/${id}/archive`);
+    return response.data;
+};
+
+export const unarchiveNote = async (id: number): Promise<Note> => {
+    const response = await axios.patch(`${API_URL}/${id}/unarchive`);
+    return response.data;
+};
