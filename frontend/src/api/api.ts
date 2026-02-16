@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { type Note } from '../types/types';
+import { type Note, type NoteInput } from '../types/types';
 
 const API_URL = 'http://localhost:3000/notes';
 
@@ -18,7 +18,7 @@ export const createNote = async (title: string, content: string, tags: string[] 
     return response.data;
 };
 
-export const updateNote = async (id: number, data: any): Promise<Note> => {
+export const updateNote = async (id: number, data: Partial<NoteInput>): Promise<Note> => {
     const response = await axios.patch(`${API_URL}/${id}`, data);
     return response.data;
 };

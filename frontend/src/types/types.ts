@@ -12,3 +12,9 @@ export interface Note {
     updatedAt: string;
     tags: Tag[];
 }
+
+export interface NoteInput {
+    title: string;
+    content: string;
+    tags?: string[];
+}
