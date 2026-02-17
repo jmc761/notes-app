@@ -2,8 +2,8 @@ import axios from 'axios';
 import { type Note, type NoteInput } from '../types/types';
 
 const BASE_URL = window.location.hostname === 'localhost' 
-    ? 'http://localhost:3000/api/notes' 
-    : 'https://ensolvers-note-challenge.onrender.com/api/notes';
+    ? 'http://localhost:3000' 
+    : 'https://ensolvers-note-challenge.onrender.com';
 
 const API_URL = `${BASE_URL}/api/notes`;
 
