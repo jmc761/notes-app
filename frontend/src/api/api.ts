@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { type Note, type NoteInput } from '../types/types';
 
-const API_URL = 'http://localhost:3000/notes';
+const API_URL = 'http://localhost:3000/api/notes';
 
 export const getNotes = async (archived = false): Promise<Note[]> => {
     const response = await axios.get(API_URL, { params: { archived } });
