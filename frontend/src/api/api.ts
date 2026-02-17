@@ -1,7 +1,11 @@
 import axios from 'axios';
 import { type Note, type NoteInput } from '../types/types';
 
-const API_URL = 'http://localhost:3000/api/notes';
+const BASE_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:3000/api/notes' 
+    : 'https://ensolvers-note-challenge.onrender.com/api/notes';
+
+const API_URL = `${BASE_URL}/api/notes`;
 
 export const getNotes = async (archived = false): Promise<Note[]> => {
     const response = await axios.get(API_URL, { params: { archived } });
