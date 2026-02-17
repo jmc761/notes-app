@@ -1,13 +1,15 @@
 # Note Taking Application
 
+A full-stack Note Taking application built with NestJS (Backend) and React + Vite (Frontend).
+
+Author: Juan Manuel Cerdeira / <juanmanuelcerdeira761@gmail.com>
+
 ## Deployment (Render)
 
 - **Frontend:** https://ensolvers-note-challenge-frontend.onrender.com/
 - **Backend:** https://ensolvers-note-challenge.onrender.com/api/notes
 
 > Note: The Render service may be idle at times; the backend can take ~30 seconds to start after being inactive.
-
-A full-stack Note Taking application built with NestJS (Backend) and React + Vite (Frontend).
 
 ## Project Requirements & Run Guide
 
