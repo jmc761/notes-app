@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { type Note, type NoteInput } from '../types/types';
+import { type Note, type NoteInput } from '../types';
 
 const BASE_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:3000' 

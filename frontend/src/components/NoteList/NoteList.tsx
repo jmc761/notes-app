@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getNotes, deleteNote, archiveNote, unarchiveNote } from '../../api/api';
-import { type Note } from '../../types/types';
+import { getNotes, deleteNote, archiveNote, unarchiveNote } from '../../api';
+import { type Note } from '../../types';
 import './NoteList.css';
 
 interface NoteListProps {
@@ -49,7 +49,6 @@ export const NoteList: React.FC<NoteListProps> = ({ archived }) => {
         <div className="note-list">
             <div className="list-header">
                 <h2>{archived ? 'Archived Notes' : 'My Notes'}</h2>
-
                 {allTags.length > 0 && (
                     <div className="tag-filter">
                         <span>Filter by tag: </span>

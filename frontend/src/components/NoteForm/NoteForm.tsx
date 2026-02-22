@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { createNote, updateNote, getNote } from '../../api/api';
+import { createNote, updateNote, getNote } from '../../api';
 import './NoteForm.css';
 
 export const NoteForm: React.FC = () => {
