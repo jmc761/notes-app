@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getNotes, deleteNote, archiveNote, unarchiveNote } from '../api/api';
-import { type Note } from '../types/types';
+import { getNotes, deleteNote, archiveNote, unarchiveNote } from '../../api/api';
+import { type Note } from '../../types/types';
+import './NoteList.css';
 
 interface NoteListProps {
     archived: boolean;

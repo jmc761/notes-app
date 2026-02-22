@@ -13,6 +13,8 @@ body {
   padding: 20px;
 }
 
+/*Header*/
+
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -44,6 +46,8 @@ body {
   color: #007bff;
 }
 
+/*Buttons*/
+
 .button {
   padding: 8px 16px;
   border-radius: 4px;
@@ -68,125 +72,4 @@ body {
 .header-button {
   background-color: #28a745;
   color: white;
-}
-
-.note-list .actions {
-  display: none;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.note-card {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-}
-
-.note-card h3 {
-  margin-top: 0;
-  color: #2c3e50;
-}
-
-.note-card p {
-  flex-grow: 1;
-  line-height: 1.5;
-  color: #555;
-}
-
-.card-actions {
-  margin-top: 15px;
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-}
-
-.card-actions button,
-.card-actions a {
-  background: none;
-  border: 1px solid #ddd;
-  padding: 5px 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #555;
-  font-size: 0.9em;
-  cursor: pointer;
-}
-
-.card-actions button:hover,
-.card-actions a:hover {
-  background: #f0f0f0;
-}
-
-.note-form {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-.form-control {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1em;
-  box-sizing: border-box;
-}
-
-.form-control:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-.list-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.tag-filter {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.tag-filter select {
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin: 10px 0;
-}
-
-.tag-pill {
-  background-color: #e2e6ea;
-  color: #495057;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 0.85em;
 }

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { NoteList } from './components/NoteList';
-import { NoteForm } from './components/NoteForm';
+import { NoteList } from './components/NoteList/NoteList';
+import { NoteForm } from './components/NoteForm/NoteForm';
 import './App.css';
 
 function App() {
