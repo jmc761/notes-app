@@ -6,8 +6,8 @@ Author: Juan Manuel Cerdeira / <juanmanuelcerdeira761@gmail.com>
 
 ## Deployment (Render)
 
-- **Frontend:** https://ensolvers-note-challenge-frontend.onrender.com/
-- **Backend:** https://ensolvers-note-challenge.onrender.com/api/notes
+- **Frontend:** <https://notes-app-frontend-uny2.onrender.com>
+- **Backend:** <https://notes-app-1k9m.onrender.com>
 
 > Note: The Render service may be idle at times; the backend can take ~30 seconds to start after being inactive.
 
